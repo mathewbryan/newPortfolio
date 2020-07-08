@@ -1,18 +1,19 @@
-import React from "react"
+import React, { Component } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Header from "../components/header"
+import Navigation from "../components/navigation"
+import NavigationButton from "../components/navigationButton"
 
 const IndexPage = () => (
-  <Layout>
+  <div>
     <Header/>
+    <NavigationButton/>
     <SEO title="Home" />
-    
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  </div>  
 )
 
 export default IndexPage
